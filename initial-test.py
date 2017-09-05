@@ -31,7 +31,7 @@ For row in newfile:
 #str_origins = ['Alterego, Bristol', 'The Bank, Bristol']
 #str_destinations = ['The Lansdown, Bristol', 'The Crown, Bristol', 'Ye Shakespear, Bristol']
 
-mydict = ['origins':str_origins,'destinations':str_destinations,'mode':'walking','language':'en-EN','key':'AIzaSyCEkcQlgD77bHxS_g31KwsUWoHvFuiT-YY']
+mydict = ['origins':str_origins,'destinations':str_destinations,'mode':'walking','language':'en-EN','key':'MY-KEY']
 
 Send_URL = BASE_URL + urlencode(mydict, doseq = True)
 
