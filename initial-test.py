@@ -7,16 +7,10 @@ import requests
 from urllib.parse import urlencode
 import webbrowser
 
-print('1')
-
 # Set base url as basis on which to make queries
 BASE_URL ="https://maps.googleapis.com/maps/api/distancematrix/json?"
 
-print('BASE_URL')
-
-os.chdir("C:\\Users\\Nick\\Documents\\Documents\\Decision Support\\App 
-
-Development - Pub Crawl Creator")
+os.chdir("C:\\Users\\Nick\\Documents\\Documents\\Decision Support\\App Development - Pub Crawl Creator")
 newfile = csv.DictReader(open('Bristol Pubs - Origins.csv'))
 str_origins = []
 For row in newfile:
