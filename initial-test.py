@@ -1,6 +1,6 @@
-# Test on the fly with webbrowser
-#url = "https://maps.googleapis.com/maps/api/staticmap?size=600x400"
-#webbrowser.open(url)
+# Created by Nick Rose, Sep-17
+# Initial development file to grow understanding of Python and look at getting pairwise distances from the Google Maps Services Distance API
+
 import os
 import csv
 import requests
@@ -29,8 +29,15 @@ mydict = ['origins':str_origins,'destinations':str_destinations,'mode':'walking'
 
 Send_URL = BASE_URL + urlencode(mydict, doseq = True)
 
+# Test to see whether we get a JSON webpage showing the pairwise walking distances between pubs 
 webbrowser.open(SEND_URL)
 
-# A little confused about the library here: 
+# If so then get into reading the JSON text returned by this URL
 
-https://github.com/googlemaps/google-maps-services-python
+
+### NOTES ###
+# A little confused about the library here: https://github.com/googlemaps/google-maps-services-python
+
+# Test on the fly with webbrowser
+#url = "https://maps.googleapis.com/maps/api/staticmap?size=600x400"
+#webbrowser.open(url)
